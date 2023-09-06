@@ -1,7 +1,4 @@
 # Smart_Contract_Portfolio
-Solidity Portfolio
-
-# Smart_Contract_Portfolio
 Christian Reyes' Solidity Portfolio
 
 Skills _________________________________________________________________________________________
