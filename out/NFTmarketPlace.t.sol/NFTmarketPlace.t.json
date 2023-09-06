@@ -1,0 +1,34 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/NFTmarketPlace.t.sol",
+    "id": 49847,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "32:25:36",
+    "nodes": [
+      {
+        "id": 49846,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:36",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 36
+}

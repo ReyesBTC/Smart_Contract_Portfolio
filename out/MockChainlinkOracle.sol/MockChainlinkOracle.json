@@ -1,0 +1,834 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_price",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "latestRoundData",
+      "outputs": [
+        {
+          "internalType": "uint80",
+          "name": "roundID",
+          "type": "uint80"
+        },
+        {
+          "internalType": "int256",
+          "name": "answer",
+          "type": "int256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "startedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "updatedAt",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint80",
+          "name": "answeredInRound",
+          "type": "uint80"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "int256",
+          "name": "",
+          "type": "int256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "int256",
+          "name": "_price",
+          "type": "int256"
+        }
+      ],
+      "name": "setPrice",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060405161014838038061014883398101604081905261002f91610037565b600055610050565b60006020828403121561004957600080fd5b5051919050565b60ea8061005e6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063a035b1fe146041578063f7a3080614605c578063feaf968c14606e575b600080fd5b604960005481565b6040519081526020015b60405180910390f35b606c6067366004609c565b600055565b005b60008054604080518381526020810192909252810182905260608101829052608081019190915260a0016053565b60006020828403121560ad57600080fd5b503591905056fea2646970667358221220c996393b5b7a02bec6f7add29f434bea734ea15e6b15458cb0767664a6f17cd064736f6c63430008150033",
+    "sourceMap": "316:1349:29:-:0;;;648:58;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;685:5;:14;316:1349;;14:183:33;83:6;136:2;124:9;115:7;111:23;107:32;104:52;;;152:1;149;142:12;104:52;-1:-1:-1;175:16:33;;14:183;-1:-1:-1;14:183:33:o;:::-;316:1349:29;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c8063a035b1fe146041578063f7a3080614605c578063feaf968c14606e575b600080fd5b604960005481565b6040519081526020015b60405180910390f35b606c6067366004609c565b600055565b005b60008054604080518381526020810192909252810182905260608101829052608081019190915260a0016053565b60006020828403121560ad57600080fd5b503591905056fea2646970667358221220c996393b5b7a02bec6f7add29f434bea734ea15e6b15458cb0767664a6f17cd064736f6c63430008150033",
+    "sourceMap": "316:1349:29:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;496:19;;;;;;;;;158:25:33;;;146:2;131:18;496:19:29;;;;;;;;1592:71;;;;;;:::i;:::-;1642:5;:14;1592:71;;;1174:234;1231:14;1386:5;;1174:234;;;672:34:33;;;737:2;722:18;;715:34;;;;765:18;;758:34;;;823:2;808:18;;801:34;;;866:3;851:19;;844:44;;;;618:3;603:19;1174:234:29;378:516:33;194:179;252:6;305:2;293:9;284:7;280:23;276:32;273:52;;;321:1;318;311:12;273:52;-1:-1:-1;344:23:33;;194:179;-1:-1:-1;194:179:33:o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "latestRoundData()": "feaf968c",
+    "price()": "a035b1fe",
+    "setPrice(int256)": "f7a30806"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"_price\",\"type\":\"int256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"inputs\":[],\"name\":\"latestRoundData\",\"outputs\":[{\"internalType\":\"uint80\",\"name\":\"roundID\",\"type\":\"uint80\"},{\"internalType\":\"int256\",\"name\":\"answer\",\"type\":\"int256\"},{\"internalType\":\"uint256\",\"name\":\"startedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"updatedAt\",\"type\":\"uint256\"},{\"internalType\":\"uint80\",\"name\":\"answeredInRound\",\"type\":\"uint80\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"price\",\"outputs\":[{\"internalType\":\"int256\",\"name\":\"\",\"type\":\"int256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"int256\",\"name\":\"_price\",\"type\":\"int256\"}],\"name\":\"setPrice\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Christian Reyes \",\"details\":\"This contract mocks the Chainlink oracle for testing purposes.\",\"kind\":\"dev\",\"methods\":{\"constructor\":{\"params\":{\"_price\":\"The initial mock price to be set.\"}},\"latestRoundData()\":{\"details\":\"This function returns mock data for testing purposes.\",\"returns\":{\"answer\":\"The current mock price.\",\"answeredInRound\":\"Mock answeredInRound (always returns 0).\",\"roundID\":\"Mock round ID (always returns 0).\",\"startedAt\":\"Mock startedAt timestamp (always returns 0).\",\"updatedAt\":\"Mock updatedAt timestamp (always returns 0).\"}},\"setPrice(int256)\":{\"details\":\"This function allows you to change the mock price for testing.\",\"params\":{\"_price\":\"The new mock price to be set.\"}}},\"stateVariables\":{\"price\":{\"details\":\"This value can be set and retrieved by the contract's methods.\"}},\"title\":\"Mock Chainlink Oracle\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"constructor\":{\"notice\":\"Contract constructor that initializes the mock price.\"},\"latestRoundData()\":{\"notice\":\"Function to simulate Chainlink's latestRoundData function.\"},\"price()\":{\"notice\":\"The mocked price value to be returned by the oracle.\"},\"setPrice(int256)\":{\"notice\":\"Function to set a new mock price.\"}},\"notice\":\"Mock Chainlink Oracle for testing purposes in PseudonymousProofOftradeNFT.t.sol & DynamicAssetPricedNFT.t.sol.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/MockChainlinkOracle.sol\":\"MockChainlinkOracle\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/MockChainlinkOracle.sol\":{\"keccak256\":\"0xb37748e235f77b8738c97946c1121c9f4e6c99284f0038cbcdb26850bf98703c\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://1c4a00d5c5a231b9a39f971f2ce456ed52bba64b96e24a04766b2ea40ea48d16\",\"dweb:/ipfs/QmTi1qYnobeRfQuCyF5sWqtYUWZJibJqGinz25c1DQH5rX\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "int256",
+              "name": "_price",
+              "type": "int256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "constructor"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "latestRoundData",
+          "outputs": [
+            {
+              "internalType": "uint80",
+              "name": "roundID",
+              "type": "uint80"
+            },
+            {
+              "internalType": "int256",
+              "name": "answer",
+              "type": "int256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "startedAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "updatedAt",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint80",
+              "name": "answeredInRound",
+              "type": "uint80"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "price",
+          "outputs": [
+            {
+              "internalType": "int256",
+              "name": "",
+              "type": "int256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "int256",
+              "name": "_price",
+              "type": "int256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setPrice"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "constructor": {
+            "params": {
+              "_price": "The initial mock price to be set."
+            }
+          },
+          "latestRoundData()": {
+            "details": "This function returns mock data for testing purposes.",
+            "returns": {
+              "answer": "The current mock price.",
+              "answeredInRound": "Mock answeredInRound (always returns 0).",
+              "roundID": "Mock round ID (always returns 0).",
+              "startedAt": "Mock startedAt timestamp (always returns 0).",
+              "updatedAt": "Mock updatedAt timestamp (always returns 0)."
+            }
+          },
+          "setPrice(int256)": {
+            "details": "This function allows you to change the mock price for testing.",
+            "params": {
+              "_price": "The new mock price to be set."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "constructor": {
+            "notice": "Contract constructor that initializes the mock price."
+          },
+          "latestRoundData()": {
+            "notice": "Function to simulate Chainlink's latestRoundData function."
+          },
+          "price()": {
+            "notice": "The mocked price value to be returned by the oracle."
+          },
+          "setPrice(int256)": {
+            "notice": "Function to set a new mock price."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/MockChainlinkOracle.sol": "MockChainlinkOracle"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/MockChainlinkOracle.sol": {
+        "keccak256": "0xb37748e235f77b8738c97946c1121c9f4e6c99284f0038cbcdb26850bf98703c",
+        "urls": [
+          "bzz-raw://1c4a00d5c5a231b9a39f971f2ce456ed52bba64b96e24a04766b2ea40ea48d16",
+          "dweb:/ipfs/QmTi1qYnobeRfQuCyF5sWqtYUWZJibJqGinz25c1DQH5rX"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/MockChainlinkOracle.sol",
+    "id": 45106,
+    "exportedSymbols": {
+      "MockChainlinkOracle": [
+        45105
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:1634:29",
+    "nodes": [
+      {
+        "id": 45056,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:29",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 45105,
+        "nodeType": "ContractDefinition",
+        "src": "316:1349:29",
+        "nodes": [
+          {
+            "id": 45060,
+            "nodeType": "VariableDeclaration",
+            "src": "496:19:29",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 45058,
+              "nodeType": "StructuredDocumentation",
+              "src": "351:140:29",
+              "text": "@notice The mocked price value to be returned by the oracle.\n @dev This value can be set and retrieved by the contract's methods."
+            },
+            "functionSelector": "a035b1fe",
+            "mutability": "mutable",
+            "name": "price",
+            "nameLocation": "510:5:29",
+            "scope": 45105,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_int256",
+              "typeString": "int256"
+            },
+            "typeName": {
+              "id": 45059,
+              "name": "int256",
+              "nodeType": "ElementaryTypeName",
+              "src": "496:6:29",
+              "typeDescriptions": {
+                "typeIdentifier": "t_int256",
+                "typeString": "int256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 45071,
+            "nodeType": "FunctionDefinition",
+            "src": "648:58:29",
+            "nodes": [],
+            "body": {
+              "id": 45070,
+              "nodeType": "Block",
+              "src": "675:31:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 45068,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 45066,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45060,
+                      "src": "685:5:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 45067,
+                      "name": "_price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45063,
+                      "src": "693:6:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "685:14:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 45069,
+                  "nodeType": "ExpressionStatement",
+                  "src": "685:14:29"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 45061,
+              "nodeType": "StructuredDocumentation",
+              "src": "522:121:29",
+              "text": "@notice Contract constructor that initializes the mock price.\n @param _price The initial mock price to be set."
+            },
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nameLocation": "-1:-1:-1",
+            "parameters": {
+              "id": 45064,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45063,
+                  "mutability": "mutable",
+                  "name": "_price",
+                  "nameLocation": "667:6:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45071,
+                  "src": "660:13:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 45062,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "660:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "659:15:29"
+            },
+            "returnParameters": {
+              "id": 45065,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "675:0:29"
+            },
+            "scope": 45105,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 45093,
+            "nodeType": "FunctionDefinition",
+            "src": "1174:234:29",
+            "nodes": [],
+            "body": {
+              "id": 45092,
+              "nodeType": "Block",
+              "src": "1365:43:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "components": [
+                      {
+                        "hexValue": "30",
+                        "id": 45085,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1383:1:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "id": 45086,
+                        "name": "price",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 45060,
+                        "src": "1386:5:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_int256",
+                          "typeString": "int256"
+                        }
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 45087,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1393:1:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 45088,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1396:1:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      },
+                      {
+                        "hexValue": "30",
+                        "id": 45089,
+                        "isConstant": false,
+                        "isLValue": false,
+                        "isPure": true,
+                        "kind": "number",
+                        "lValueRequested": false,
+                        "nodeType": "Literal",
+                        "src": "1399:1:29",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_rational_0_by_1",
+                          "typeString": "int_const 0"
+                        },
+                        "value": "0"
+                      }
+                    ],
+                    "id": 45090,
+                    "isConstant": false,
+                    "isInlineArray": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "TupleExpression",
+                    "src": "1382:19:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_tuple$_t_rational_0_by_1_$_t_int256_$_t_rational_0_by_1_$_t_rational_0_by_1_$_t_rational_0_by_1_$",
+                      "typeString": "tuple(int_const 0,int256,int_const 0,int_const 0,int_const 0)"
+                    }
+                  },
+                  "functionReturnParameters": 45084,
+                  "id": 45091,
+                  "nodeType": "Return",
+                  "src": "1375:26:29"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 45072,
+              "nodeType": "StructuredDocumentation",
+              "src": "712:457:29",
+              "text": "@notice Function to simulate Chainlink's latestRoundData function.\n @dev This function returns mock data for testing purposes.\n @return roundID Mock round ID (always returns 0).\n @return answer The current mock price.\n @return startedAt Mock startedAt timestamp (always returns 0).\n @return updatedAt Mock updatedAt timestamp (always returns 0).\n @return answeredInRound Mock answeredInRound (always returns 0)."
+            },
+            "functionSelector": "feaf968c",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "latestRoundData",
+            "nameLocation": "1183:15:29",
+            "parameters": {
+              "id": 45073,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1198:2:29"
+            },
+            "returnParameters": {
+              "id": 45084,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45075,
+                  "mutability": "mutable",
+                  "name": "roundID",
+                  "nameLocation": "1238:7:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45093,
+                  "src": "1231:14:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint80",
+                    "typeString": "uint80"
+                  },
+                  "typeName": {
+                    "id": 45074,
+                    "name": "uint80",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1231:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint80",
+                      "typeString": "uint80"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45077,
+                  "mutability": "mutable",
+                  "name": "answer",
+                  "nameLocation": "1263:6:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45093,
+                  "src": "1256:13:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 45076,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1256:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45079,
+                  "mutability": "mutable",
+                  "name": "startedAt",
+                  "nameLocation": "1288:9:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45093,
+                  "src": "1280:17:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 45078,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1280:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45081,
+                  "mutability": "mutable",
+                  "name": "updatedAt",
+                  "nameLocation": "1316:9:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45093,
+                  "src": "1308:17:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 45080,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1308:7:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 45083,
+                  "mutability": "mutable",
+                  "name": "answeredInRound",
+                  "nameLocation": "1343:15:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45093,
+                  "src": "1336:22:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint80",
+                    "typeString": "uint80"
+                  },
+                  "typeName": {
+                    "id": 45082,
+                    "name": "uint80",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1336:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint80",
+                      "typeString": "uint80"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1221:143:29"
+            },
+            "scope": 45105,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 45104,
+            "nodeType": "FunctionDefinition",
+            "src": "1592:71:29",
+            "nodes": [],
+            "body": {
+              "id": 45103,
+              "nodeType": "Block",
+              "src": "1632:31:29",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 45101,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 45099,
+                      "name": "price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45060,
+                      "src": "1642:5:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 45100,
+                      "name": "_price",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 45096,
+                      "src": "1650:6:29",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_int256",
+                        "typeString": "int256"
+                      }
+                    },
+                    "src": "1642:14:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "id": 45102,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1642:14:29"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 45094,
+              "nodeType": "StructuredDocumentation",
+              "src": "1414:173:29",
+              "text": "@notice Function to set a new mock price.\n @dev This function allows you to change the mock price for testing.\n @param _price The new mock price to be set."
+            },
+            "functionSelector": "f7a30806",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setPrice",
+            "nameLocation": "1601:8:29",
+            "parameters": {
+              "id": 45097,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 45096,
+                  "mutability": "mutable",
+                  "name": "_price",
+                  "nameLocation": "1617:6:29",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 45104,
+                  "src": "1610:13:29",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_int256",
+                    "typeString": "int256"
+                  },
+                  "typeName": {
+                    "id": 45095,
+                    "name": "int256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1610:6:29",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_int256",
+                      "typeString": "int256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1609:15:29"
+            },
+            "returnParameters": {
+              "id": 45098,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1632:0:29"
+            },
+            "scope": 45105,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "MockChainlinkOracle",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 45057,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:257:29",
+          "text": "@title Mock Chainlink Oracle\n @author Christian Reyes \n @notice Mock Chainlink Oracle for testing purposes in PseudonymousProofOftradeNFT.t.sol & DynamicAssetPricedNFT.t.sol.\n @dev This contract mocks the Chainlink oracle for testing purposes."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          45105
+        ],
+        "name": "MockChainlinkOracle",
+        "nameLocation": "325:19:29",
+        "scope": 45106,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 29
+}

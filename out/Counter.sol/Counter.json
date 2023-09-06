@@ -1,0 +1,420 @@
+{
+  "abi": [
+    {
+      "inputs": [],
+      "name": "increment",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNumber",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x608060405234801561001057600080fd5b5060f78061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046083565b600055565b005b605b60005481565b60405190815260200160405180910390f35b6051600080549080607c83609b565b9190505550565b600060208284031215609457600080fd5b5035919050565b60006001820160ba57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212201ec28b6bf6cbab025526c530018c441e27f83ca7f5691d8abcf2fa09109eba8864736f6c63430008150033",
+    "sourceMap": "220:337:36:-:0;;;;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80633fb5c1cb1460415780638381f58a146053578063d09de08a14606d575b600080fd5b6051604c3660046083565b600055565b005b605b60005481565b60405190815260200160405180910390f35b6051600080549080607c83609b565b9190505550565b600060208284031215609457600080fd5b5035919050565b60006001820160ba57634e487b7160e01b600052601160045260246000fd5b506001019056fea26469706673582212201ec28b6bf6cbab025526c530018c441e27f83ca7f5691d8abcf2fa09109eba8864736f6c63430008150033",
+    "sourceMap": "220:337:36:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;365:80;;;;;;:::i;:::-;420:6;:18;365:80;;;292:21;;;;;;;;;345:25:45;;;333:2;318:18;292:21:36;;;;;;;502:53;;540:6;:8;;;:6;:8;;;:::i;:::-;;;;;;502:53::o;14:180:45:-;73:6;126:2;114:9;105:7;101:23;97:32;94:52;;;142:1;139;132:12;94:52;-1:-1:-1;165:23:45;;14:180;-1:-1:-1;14:180:45:o;381:232::-;420:3;441:17;;;438:140;;500:10;495:3;491:20;488:1;481:31;535:4;532:1;525:15;563:4;560:1;553:15;438:140;-1:-1:-1;605:1:45;594:13;;381:232::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "increment()": "d09de08a",
+    "number()": "8381f58a",
+    "setNumber(uint256)": "3fb5c1cb"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"increment\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"number\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newNumber\",\"type\":\"uint256\"}],\"name\":\"setNumber\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"custom:experimental\":\"This is an experimental contract \",\"details\":\"This is only for testing in Foundry purposes\",\"kind\":\"dev\",\"methods\":{},\"title\":\"Counter\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"increment()\":{\"notice\":\"Increments the value of the counter\"},\"number()\":{\"notice\":\"The current value of the counter\"},\"setNumber(uint256)\":{\"notice\":\"Sets the value of the counter\"}},\"notice\":\"A simple counter\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/Counter.sol\":\"Counter\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/Counter.sol\":{\"keccak256\":\"0x953595c6d6df5c000d453c88fa69d96390072a09ebc0698f02b560ab51c01c6f\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://91c553cba0759938d9fbccd3965491283ba15228cee184ba2c25a28279230018\",\"dweb:/ipfs/QmbjYCMRbRi1K3PZuZEsRJhJrVWhb1pER4mRv9qSJnSVnM\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "increment"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "number",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "newNumber",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "setNumber"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "increment()": {
+            "notice": "Increments the value of the counter"
+          },
+          "number()": {
+            "notice": "The current value of the counter"
+          },
+          "setNumber(uint256)": {
+            "notice": "Sets the value of the counter"
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/Counter.sol": "Counter"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/Counter.sol": {
+        "keccak256": "0x953595c6d6df5c000d453c88fa69d96390072a09ebc0698f02b560ab51c01c6f",
+        "urls": [
+          "bzz-raw://91c553cba0759938d9fbccd3965491283ba15228cee184ba2c25a28279230018",
+          "dweb:/ipfs/QmbjYCMRbRi1K3PZuZEsRJhJrVWhb1pER4mRv9qSJnSVnM"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/Counter.sol",
+    "id": 47189,
+    "exportedSymbols": {
+      "Counter": [
+        47188
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:526:36",
+    "nodes": [
+      {
+        "id": 47164,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:36",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 47188,
+        "nodeType": "ContractDefinition",
+        "src": "220:337:36",
+        "nodes": [
+          {
+            "id": 47168,
+            "nodeType": "VariableDeclaration",
+            "src": "292:21:36",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 47166,
+              "nodeType": "StructuredDocumentation",
+              "src": "244:43:36",
+              "text": "@notice The current value of the counter"
+            },
+            "functionSelector": "8381f58a",
+            "mutability": "mutable",
+            "name": "number",
+            "nameLocation": "307:6:36",
+            "scope": 47188,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 47167,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "292:7:36",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 47179,
+            "nodeType": "FunctionDefinition",
+            "src": "365:80:36",
+            "nodes": [],
+            "body": {
+              "id": 47178,
+              "nodeType": "Block",
+              "src": "410:35:36",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 47176,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 47174,
+                      "name": "number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47168,
+                      "src": "420:6:36",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 47175,
+                      "name": "newNumber",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47171,
+                      "src": "429:9:36",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "src": "420:18:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 47177,
+                  "nodeType": "ExpressionStatement",
+                  "src": "420:18:36"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47169,
+              "nodeType": "StructuredDocumentation",
+              "src": "320:40:36",
+              "text": "@notice Sets the value of the counter"
+            },
+            "functionSelector": "3fb5c1cb",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "setNumber",
+            "nameLocation": "374:9:36",
+            "parameters": {
+              "id": 47172,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 47171,
+                  "mutability": "mutable",
+                  "name": "newNumber",
+                  "nameLocation": "392:9:36",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47179,
+                  "src": "384:17:36",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 47170,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "384:7:36",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "383:19:36"
+            },
+            "returnParameters": {
+              "id": 47173,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "410:0:36"
+            },
+            "scope": 47188,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          },
+          {
+            "id": 47187,
+            "nodeType": "FunctionDefinition",
+            "src": "502:53:36",
+            "nodes": [],
+            "body": {
+              "id": 47186,
+              "nodeType": "Block",
+              "src": "530:25:36",
+              "nodes": [],
+              "statements": [
+                {
+                  "expression": {
+                    "id": 47184,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "++",
+                    "prefix": false,
+                    "src": "540:8:36",
+                    "subExpression": {
+                      "id": 47183,
+                      "name": "number",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 47168,
+                      "src": "540:6:36",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 47185,
+                  "nodeType": "ExpressionStatement",
+                  "src": "540:8:36"
+                }
+              ]
+            },
+            "documentation": {
+              "id": 47180,
+              "nodeType": "StructuredDocumentation",
+              "src": "451:46:36",
+              "text": "@notice Increments the value of the counter"
+            },
+            "functionSelector": "d09de08a",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "increment",
+            "nameLocation": "511:9:36",
+            "parameters": {
+              "id": 47181,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "520:2:36"
+            },
+            "returnParameters": {
+              "id": 47182,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "530:0:36"
+            },
+            "scope": 47188,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "Counter",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 47165,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:161:36",
+          "text": "@title Counter\n @notice A simple counter\n @dev This is only for testing in Foundry purposes\n @custom:experimental This is an experimental contract "
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          47188
+        ],
+        "name": "Counter",
+        "nameLocation": "229:7:36",
+        "scope": 47189,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 36
+}

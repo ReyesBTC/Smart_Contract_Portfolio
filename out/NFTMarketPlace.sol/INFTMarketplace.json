@@ -1,0 +1,488 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "buyNFT",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "delistNFT",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        },
+        {
+          "internalType": "uint256",
+          "name": "price",
+          "type": "uint256"
+        }
+      ],
+      "name": "listNFT",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "register",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unregister",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "buyNFT(uint256)": "51ed8288",
+    "delistNFT(uint256)": "cb917b9c",
+    "listNFT(uint256,uint256)": "94383f14",
+    "register()": "1aa3a008",
+    "unregister()": "e79a198f"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"buyNFT\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"delistNFT\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"},{\"internalType\":\"uint256\",\"name\":\"price\",\"type\":\"uint256\"}],\"name\":\"listNFT\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"register\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"unregister\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Christian Reyes \",\"details\":\"under construction\",\"kind\":\"dev\",\"methods\":{},\"title\":\"NFT Marketplace Contract \",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"notice\":\"NFT Marketplace Contract for Testing Purposes with Foundry\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/NFTMarketPlace.sol\":\"INFTMarketplace\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/NFTMarketPlace.sol\":{\"keccak256\":\"0xb3c022473eee4ea3610b16ff93f04e1f1ba8fec08f7c4de3f6c3cc41734f3f35\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://53b2248b9a0ee67fde513cf27f225b424fe1badb9c5a1173ad781ba6d4525f2d\",\"dweb:/ipfs/Qmej33tLk8gZ4ySPMgCJ7zYbqZfDWZSNyWCcpingQkex4C\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function",
+          "name": "buyNFT"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "delistNFT"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "price",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "listNFT"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "register"
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "unregister"
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {},
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {},
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/NFTMarketPlace.sol": "INFTMarketplace"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/NFTMarketPlace.sol": {
+        "keccak256": "0xb3c022473eee4ea3610b16ff93f04e1f1ba8fec08f7c4de3f6c3cc41734f3f35",
+        "urls": [
+          "bzz-raw://53b2248b9a0ee67fde513cf27f225b424fe1badb9c5a1173ad781ba6d4525f2d",
+          "dweb:/ipfs/Qmej33tLk8gZ4ySPMgCJ7zYbqZfDWZSNyWCcpingQkex4C"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/NFTMarketPlace.sol",
+    "id": 46377,
+    "exportedSymbols": {
+      "INFTMarketplace": [
+        46376
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:460:33",
+    "nodes": [
+      {
+        "id": 46351,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:33",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 46376,
+        "nodeType": "ContractDefinition",
+        "src": "224:267:33",
+        "nodes": [
+          {
+            "id": 46355,
+            "nodeType": "FunctionDefinition",
+            "src": "256:29:33",
+            "nodes": [],
+            "functionSelector": "1aa3a008",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "register",
+            "nameLocation": "265:8:33",
+            "parameters": {
+              "id": 46353,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "273:2:33"
+            },
+            "returnParameters": {
+              "id": 46354,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "284:0:33"
+            },
+            "scope": 46376,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46358,
+            "nodeType": "FunctionDefinition",
+            "src": "290:31:33",
+            "nodes": [],
+            "functionSelector": "e79a198f",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "unregister",
+            "nameLocation": "299:10:33",
+            "parameters": {
+              "id": 46356,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "309:2:33"
+            },
+            "returnParameters": {
+              "id": 46357,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "320:0:33"
+            },
+            "scope": 46376,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46365,
+            "nodeType": "FunctionDefinition",
+            "src": "326:58:33",
+            "nodes": [],
+            "functionSelector": "94383f14",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "listNFT",
+            "nameLocation": "335:7:33",
+            "parameters": {
+              "id": 46363,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46360,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "351:7:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46365,
+                  "src": "343:15:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46359,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "343:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 46362,
+                  "mutability": "mutable",
+                  "name": "price",
+                  "nameLocation": "368:5:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46365,
+                  "src": "360:13:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46361,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "360:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "342:32:33"
+            },
+            "returnParameters": {
+              "id": 46364,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "383:0:33"
+            },
+            "scope": 46376,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46370,
+            "nodeType": "FunctionDefinition",
+            "src": "389:45:33",
+            "nodes": [],
+            "functionSelector": "cb917b9c",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "delistNFT",
+            "nameLocation": "398:9:33",
+            "parameters": {
+              "id": 46368,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46367,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "416:7:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46370,
+                  "src": "408:15:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46366,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "408:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "407:17:33"
+            },
+            "returnParameters": {
+              "id": 46369,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "433:0:33"
+            },
+            "scope": 46376,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 46375,
+            "nodeType": "FunctionDefinition",
+            "src": "439:50:33",
+            "nodes": [],
+            "functionSelector": "51ed8288",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "buyNFT",
+            "nameLocation": "448:6:33",
+            "parameters": {
+              "id": 46373,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46372,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "463:7:33",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 46375,
+                  "src": "455:15:33",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 46371,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "455:7:33",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "454:17:33"
+            },
+            "returnParameters": {
+              "id": 46374,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "488:0:33"
+            },
+            "scope": 46376,
+            "stateMutability": "payable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "INFTMarketplace",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 46352,
+          "nodeType": "StructuredDocumentation",
+          "src": "58:165:33",
+          "text": "@title NFT Marketplace Contract \n @author Christian Reyes \n @notice NFT Marketplace Contract for Testing Purposes with Foundry\n @dev under construction"
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          46376
+        ],
+        "name": "INFTMarketplace",
+        "nameLocation": "234:15:33",
+        "scope": 46377,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 33
+}

@@ -1,0 +1,972 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newUser",
+          "type": "address"
+        }
+      ],
+      "name": "testAddUser",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address[]",
+          "name": "users",
+          "type": "address[]"
+        }
+      ],
+      "name": "testAirDrop",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "user",
+          "type": "address"
+        }
+      ],
+      "name": "testGetBalanceOfAddy",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "testGetOwnerOfToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "tokenId",
+          "type": "uint256"
+        }
+      ],
+      "name": "testSafeMint",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "testTriggerAirDrop",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "sourceMap": "",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "testAddUser(address)": "609a6033",
+    "testAirDrop(address[])": "e3f3a643",
+    "testGetBalanceOfAddy(address)": "2d4d6bc5",
+    "testGetOwnerOfToken(uint256)": "c03cab80",
+    "testSafeMint(address,uint256)": "7a8c196d",
+    "testTriggerAirDrop()": "63e4618d"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"newUser\",\"type\":\"address\"}],\"name\":\"testAddUser\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address[]\",\"name\":\"users\",\"type\":\"address[]\"}],\"name\":\"testAirDrop\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"user\",\"type\":\"address\"}],\"name\":\"testGetBalanceOfAddy\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"testGetOwnerOfToken\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"to\",\"type\":\"address\"},{\"internalType\":\"uint256\",\"name\":\"tokenId\",\"type\":\"uint256\"}],\"name\":\"testSafeMint\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"testTriggerAirDrop\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Christian Reyes \",\"details\":\"This is a test interface for mocking and testing purposes.\",\"kind\":\"dev\",\"methods\":{\"testAddUser(address)\":{\"params\":{\"newUser\":\"The address to be added to the publicUsers array.\"},\"returns\":{\"_0\":\"A boolean value indicating whether the operation was successful.\"}},\"testAirDrop(address[])\":{\"params\":{\"users\":\"An array of addresses to which tokens will be airdropped.\"},\"returns\":{\"_0\":\"A boolean value indicating whether the operation was successful.\"}},\"testGetBalanceOfAddy(address)\":{\"params\":{\"user\":\"The address whose token balance is to be returned.\"},\"returns\":{\"_0\":\"The token balance of the specified address.\"}},\"testGetOwnerOfToken(uint256)\":{\"params\":{\"tokenId\":\"The ID of the token whose owner is to be returned.\"},\"returns\":{\"_0\":\"The address of the owner of the specified token.\"}},\"testSafeMint(address,uint256)\":{\"params\":{\"to\":\"The address to which the token will be minted.\",\"tokenId\":\"The ID of the token to be minted.\"},\"returns\":{\"_0\":\"A boolean value indicating whether the operation was successful.\"}},\"testTriggerAirDrop()\":{\"returns\":{\"_0\":\"A boolean value indicating whether the operation was successful.\"}}},\"title\":\"Test Interface for MyToken Contract's Airdrop Functionality\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"testAddUser(address)\":{\"notice\":\"Mock function to test the addUser function in the MyToken contract.\"},\"testAirDrop(address[])\":{\"notice\":\"Mock function to test the airDrop function in the MyToken contract.\"},\"testGetBalanceOfAddy(address)\":{\"notice\":\"Mock function to test the getBalanceOfAddy function in the MyToken contract.\"},\"testGetOwnerOfToken(uint256)\":{\"notice\":\"Mock function to test the getOwnerOfToken function in the MyToken contract.\"},\"testSafeMint(address,uint256)\":{\"notice\":\"Mock function to test the safeMint function in the MyToken contract.\"},\"testTriggerAirDrop()\":{\"notice\":\"Mock function to test the triggerAirDrop function in the MyToken contract.\"}},\"notice\":\"This interface is designed for testing the airdrop functionality of the MyToken contract.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"test/ZAirDrop.t.sol\":\"ITestMyTokenAirdrop\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"test/ZAirDrop.t.sol\":{\"keccak256\":\"0xe39f07a300f96fa0222f5b1291f452e4fbb83b6b6f00b06e08ebe34769c68aa5\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://a97a70774a48f21dc58615a063c87a996eb9f17b8dae5e13ad2f46109e64a812\",\"dweb:/ipfs/QmaYV1nFUJsrXou4tnqcK5girWmM6rd7bzwhZ4WysSUzAd\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "newUser",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "testAddUser",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address[]",
+              "name": "users",
+              "type": "address[]"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "testAirDrop",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "user",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "testGetBalanceOfAddy",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "testGetOwnerOfToken",
+          "outputs": [
+            {
+              "internalType": "address",
+              "name": "",
+              "type": "address"
+            }
+          ]
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "to",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "tokenId",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "testSafeMint",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "testTriggerAirDrop",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "testAddUser(address)": {
+            "params": {
+              "newUser": "The address to be added to the publicUsers array."
+            },
+            "returns": {
+              "_0": "A boolean value indicating whether the operation was successful."
+            }
+          },
+          "testAirDrop(address[])": {
+            "params": {
+              "users": "An array of addresses to which tokens will be airdropped."
+            },
+            "returns": {
+              "_0": "A boolean value indicating whether the operation was successful."
+            }
+          },
+          "testGetBalanceOfAddy(address)": {
+            "params": {
+              "user": "The address whose token balance is to be returned."
+            },
+            "returns": {
+              "_0": "The token balance of the specified address."
+            }
+          },
+          "testGetOwnerOfToken(uint256)": {
+            "params": {
+              "tokenId": "The ID of the token whose owner is to be returned."
+            },
+            "returns": {
+              "_0": "The address of the owner of the specified token."
+            }
+          },
+          "testSafeMint(address,uint256)": {
+            "params": {
+              "to": "The address to which the token will be minted.",
+              "tokenId": "The ID of the token to be minted."
+            },
+            "returns": {
+              "_0": "A boolean value indicating whether the operation was successful."
+            }
+          },
+          "testTriggerAirDrop()": {
+            "returns": {
+              "_0": "A boolean value indicating whether the operation was successful."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "testAddUser(address)": {
+            "notice": "Mock function to test the addUser function in the MyToken contract."
+          },
+          "testAirDrop(address[])": {
+            "notice": "Mock function to test the airDrop function in the MyToken contract."
+          },
+          "testGetBalanceOfAddy(address)": {
+            "notice": "Mock function to test the getBalanceOfAddy function in the MyToken contract."
+          },
+          "testGetOwnerOfToken(uint256)": {
+            "notice": "Mock function to test the getOwnerOfToken function in the MyToken contract."
+          },
+          "testSafeMint(address,uint256)": {
+            "notice": "Mock function to test the safeMint function in the MyToken contract."
+          },
+          "testTriggerAirDrop()": {
+            "notice": "Mock function to test the triggerAirDrop function in the MyToken contract."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "test/ZAirDrop.t.sol": "ITestMyTokenAirdrop"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "test/ZAirDrop.t.sol": {
+        "keccak256": "0xe39f07a300f96fa0222f5b1291f452e4fbb83b6b6f00b06e08ebe34769c68aa5",
+        "urls": [
+          "bzz-raw://a97a70774a48f21dc58615a063c87a996eb9f17b8dae5e13ad2f46109e64a812",
+          "dweb:/ipfs/QmaYV1nFUJsrXou4tnqcK5girWmM6rd7bzwhZ4WysSUzAd"
+        ],
+        "license": "MIT"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "test/ZAirDrop.t.sol",
+    "id": 48755,
+    "exportedSymbols": {
+      "ITestMyTokenAirdrop": [
+        48754
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:2183:44",
+    "nodes": [
+      {
+        "id": 48703,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:44",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".9"
+        ]
+      },
+      {
+        "id": 48754,
+        "nodeType": "ContractDefinition",
+        "src": "328:1886:44",
+        "nodes": [
+          {
+            "id": 48714,
+            "nodeType": "FunctionDefinition",
+            "src": "657:75:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48705,
+              "nodeType": "StructuredDocumentation",
+              "src": "369:283:44",
+              "text": "@notice Mock function to test the safeMint function in the MyToken contract.\n @param to The address to which the token will be minted.\n @param tokenId The ID of the token to be minted.\n @return A boolean value indicating whether the operation was successful."
+            },
+            "functionSelector": "7a8c196d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testSafeMint",
+            "nameLocation": "666:12:44",
+            "parameters": {
+              "id": 48710,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48707,
+                  "mutability": "mutable",
+                  "name": "to",
+                  "nameLocation": "687:2:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48714,
+                  "src": "679:10:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48706,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "679:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 48709,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "699:7:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48714,
+                  "src": "691:15:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48708,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "691:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "678:29:44"
+            },
+            "returnParameters": {
+              "id": 48713,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48712,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48714,
+                  "src": "726:4:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48711,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "726:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "725:6:44"
+            },
+            "scope": 48754,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48723,
+            "nodeType": "FunctionDefinition",
+            "src": "982:71:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48715,
+              "nodeType": "StructuredDocumentation",
+              "src": "738:239:44",
+              "text": "@notice Mock function to test the airDrop function in the MyToken contract.\n @param users An array of addresses to which tokens will be airdropped.\n @return A boolean value indicating whether the operation was successful."
+            },
+            "functionSelector": "e3f3a643",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testAirDrop",
+            "nameLocation": "991:11:44",
+            "parameters": {
+              "id": 48719,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48718,
+                  "mutability": "mutable",
+                  "name": "users",
+                  "nameLocation": "1022:5:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48723,
+                  "src": "1003:24:44",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_array$_t_address_$dyn_calldata_ptr",
+                    "typeString": "address[]"
+                  },
+                  "typeName": {
+                    "baseType": {
+                      "id": 48716,
+                      "name": "address",
+                      "nodeType": "ElementaryTypeName",
+                      "src": "1003:7:44",
+                      "stateMutability": "nonpayable",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_address",
+                        "typeString": "address"
+                      }
+                    },
+                    "id": 48717,
+                    "nodeType": "ArrayTypeName",
+                    "src": "1003:9:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_array$_t_address_$dyn_storage_ptr",
+                      "typeString": "address[]"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1002:26:44"
+            },
+            "returnParameters": {
+              "id": 48722,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48721,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48723,
+                  "src": "1047:4:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48720,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1047:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1046:6:44"
+            },
+            "scope": 48754,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48729,
+            "nodeType": "FunctionDefinition",
+            "src": "1231:54:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48724,
+              "nodeType": "StructuredDocumentation",
+              "src": "1059:167:44",
+              "text": "@notice Mock function to test the triggerAirDrop function in the MyToken contract.\n @return A boolean value indicating whether the operation was successful."
+            },
+            "functionSelector": "63e4618d",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testTriggerAirDrop",
+            "nameLocation": "1240:18:44",
+            "parameters": {
+              "id": 48725,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "1258:2:44"
+            },
+            "returnParameters": {
+              "id": 48728,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48727,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48729,
+                  "src": "1279:4:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48726,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1279:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1278:6:44"
+            },
+            "scope": 48754,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48737,
+            "nodeType": "FunctionDefinition",
+            "src": "1529:62:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48730,
+              "nodeType": "StructuredDocumentation",
+              "src": "1291:233:44",
+              "text": "@notice Mock function to test the addUser function in the MyToken contract.\n @param newUser The address to be added to the publicUsers array.\n @return A boolean value indicating whether the operation was successful."
+            },
+            "functionSelector": "609a6033",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testAddUser",
+            "nameLocation": "1538:11:44",
+            "parameters": {
+              "id": 48733,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48732,
+                  "mutability": "mutable",
+                  "name": "newUser",
+                  "nameLocation": "1558:7:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48737,
+                  "src": "1550:15:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48731,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1550:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1549:17:44"
+            },
+            "returnParameters": {
+              "id": 48736,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48735,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48737,
+                  "src": "1585:4:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 48734,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1585:4:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1584:6:44"
+            },
+            "scope": 48754,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48745,
+            "nodeType": "FunctionDefinition",
+            "src": "1828:78:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48738,
+              "nodeType": "StructuredDocumentation",
+              "src": "1597:226:44",
+              "text": "@notice Mock function to test the getOwnerOfToken function in the MyToken contract.\n @param tokenId The ID of the token whose owner is to be returned.\n @return The address of the owner of the specified token."
+            },
+            "functionSelector": "c03cab80",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testGetOwnerOfToken",
+            "nameLocation": "1837:19:44",
+            "parameters": {
+              "id": 48741,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48740,
+                  "mutability": "mutable",
+                  "name": "tokenId",
+                  "nameLocation": "1865:7:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48745,
+                  "src": "1857:15:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48739,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1857:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1856:17:44"
+            },
+            "returnParameters": {
+              "id": 48744,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48743,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48745,
+                  "src": "1897:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48742,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1897:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1896:9:44"
+            },
+            "scope": 48754,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          },
+          {
+            "id": 48753,
+            "nodeType": "FunctionDefinition",
+            "src": "2136:76:44",
+            "nodes": [],
+            "documentation": {
+              "id": 48746,
+              "nodeType": "StructuredDocumentation",
+              "src": "1912:219:44",
+              "text": "@notice Mock function to test the getBalanceOfAddy function in the MyToken contract.\n @param user The address whose token balance is to be returned.\n @return The token balance of the specified address."
+            },
+            "functionSelector": "2d4d6bc5",
+            "implemented": false,
+            "kind": "function",
+            "modifiers": [],
+            "name": "testGetBalanceOfAddy",
+            "nameLocation": "2145:20:44",
+            "parameters": {
+              "id": 48749,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48748,
+                  "mutability": "mutable",
+                  "name": "user",
+                  "nameLocation": "2174:4:44",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48753,
+                  "src": "2166:12:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 48747,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2166:7:44",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2165:14:44"
+            },
+            "returnParameters": {
+              "id": 48752,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 48751,
+                  "mutability": "mutable",
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 48753,
+                  "src": "2203:7:44",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_uint256",
+                    "typeString": "uint256"
+                  },
+                  "typeName": {
+                    "id": 48750,
+                    "name": "uint256",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "2203:7:44",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "2202:9:44"
+            },
+            "scope": 48754,
+            "stateMutability": "view",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "ITestMyTokenAirdrop",
+        "contractDependencies": [],
+        "contractKind": "interface",
+        "documentation": {
+          "id": 48704,
+          "nodeType": "StructuredDocumentation",
+          "src": "57:270:44",
+          "text": "@title Test Interface for MyToken Contract's Airdrop Functionality\n @author Christian Reyes \n @notice This interface is designed for testing the airdrop functionality of the MyToken contract.\n @dev This is a test interface for mocking and testing purposes."
+        },
+        "fullyImplemented": false,
+        "linearizedBaseContracts": [
+          48754
+        ],
+        "name": "ITestMyTokenAirdrop",
+        "nameLocation": "338:19:44",
+        "scope": 48755,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 44
+}

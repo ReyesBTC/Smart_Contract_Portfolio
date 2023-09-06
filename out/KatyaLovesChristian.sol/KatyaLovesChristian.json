@@ -1,0 +1,672 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "bool",
+          "name": "doYou",
+          "type": "bool"
+        }
+      ],
+      "name": "doesKatyaLoveChristian",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "answer",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "katyaLovesChristian",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": {
+    "object": "0x60806040526000805460ff1916600117905534801561001d57600080fd5b506101ee8061002d6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063da264d001461003b578063ecbb32531461005d575b600080fd5b6000546100489060ff1681565b60405190151581526020015b60405180910390f35b61007061006b3660046100f8565b61007d565b6040516100549190610121565b6060816100a757600191506040518060800160405280604981526020016101706049913992915050565b81156100f35750506000805460ff1916600117905560408051808201909152601a81527f5965732c204b61747961206c6f7665732043687269737469616e000000000000602082015290565b919050565b60006020828403121561010a57600080fd5b8135801515811461011a57600080fd5b9392505050565b600060208083528351808285015260005b8181101561014e57858101830151858201604001528201610132565b506000604082860101526040601f19601f830116850101925050509291505056fe5965732c204b61747961206c6f7665732043687269737469616e206275742068657220747970696e6720697320612062697420726574617264656420617420746865206d6f6d656e74a2646970667358221220a192dcfad7adaf2ba468048ba4ca87f56495d4fc65ac606369f1e2edbc5d98e564736f6c63430008150033",
+    "sourceMap": "246:1172:28:-:0;;;415:38;;;-1:-1:-1;;415:38:28;449:4;415:38;;;246:1172;;;;;;;;;;;;;;;;",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063da264d001461003b578063ecbb32531461005d575b600080fd5b6000546100489060ff1681565b60405190151581526020015b60405180910390f35b61007061006b3660046100f8565b61007d565b6040516100549190610121565b6060816100a757600191506040518060800160405280604981526020016101706049913992915050565b81156100f35750506000805460ff1916600117905560408051808201909152601a81527f5965732c204b61747961206c6f7665732043687269737469616e000000000000602082015290565b919050565b60006020828403121561010a57600080fd5b8135801515811461011a57600080fd5b9392505050565b600060208083528351808285015260005b8181101561014e57858101830151858201604001528201610132565b506000604082860101526040601f19601f830116850101925050509291505056fe5965732c204b61747961206c6f7665732043687269737469616e206275742068657220747970696e6720697320612062697420726574617264656420617420746865206d6f6d656e74a2646970667358221220a192dcfad7adaf2ba468048ba4ca87f56495d4fc65ac606369f1e2edbc5d98e564736f6c63430008150033",
+    "sourceMap": "246:1172:28:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;415:38;;;;;;;;;;;;179:14:33;;172:22;154:41;;142:2;127:18;415:38:28;;;;;;;;813:603;;;;;;:::i;:::-;;:::i;:::-;;;;;;;:::i;:::-;872:20;989:5;984:176;;1018:4;1010:12;;1036:84;;;;;;;;;;;;;;;;;;813:603;-1:-1:-1;;813:603:28:o;984:176::-;1272:5;1268:142;;;-1:-1:-1;;1293:19:28;:26;;-1:-1:-1;;1293:26:28;1315:4;1293:26;;;1333:37;;;;;;;;;;;;;;;;;;813:603::o;1268:142::-;813:603;;;:::o;206:273:33:-;262:6;315:2;303:9;294:7;290:23;286:32;283:52;;;331:1;328;321:12;283:52;370:9;357:23;423:5;416:13;409:21;402:5;399:32;389:60;;445:1;442;435:12;389:60;468:5;206:273;-1:-1:-1;;;206:273:33:o;484:548::-;596:4;625:2;654;643:9;636:21;686:6;680:13;729:6;724:2;713:9;709:18;702:34;754:1;764:140;778:6;775:1;772:13;764:140;;;873:14;;;869:23;;863:30;839:17;;;858:2;835:26;828:66;793:10;;764:140;;;768:3;953:1;948:2;939:6;928:9;924:22;920:31;913:42;1023:2;1016;1012:7;1007:2;999:6;995:15;991:29;980:9;976:45;972:54;964:62;;;;484:548;;;;:::o",
+    "linkReferences": {}
+  },
+  "methodIdentifiers": {
+    "doesKatyaLoveChristian(bool)": "ecbb3253",
+    "katyaLovesChristian()": "da264d00"
+  },
+  "rawMetadata": "{\"compiler\":{\"version\":\"0.8.21+commit.d9974bed\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"bool\",\"name\":\"doYou\",\"type\":\"bool\"}],\"name\":\"doesKatyaLoveChristian\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"answer\",\"type\":\"string\"}],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"katyaLovesChristian\",\"outputs\":[{\"internalType\":\"bool\",\"name\":\"\",\"type\":\"bool\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"author\":\"Christian Reyes\",\"details\":\"The answer is always yes.\",\"kind\":\"dev\",\"methods\":{\"doesKatyaLoveChristian(bool)\":{\"details\":\"If the input is false, it will be set to true and a specific message will be returned.\",\"params\":{\"doYou\":\"A boolean input that should indicate whether Katya loves Christian.\"},\"returns\":{\"answer\":\"A string message that confirms whether Katya loves Christian.\"}}},\"stateVariables\":{\"katyaLovesChristian\":{\"details\":\"The initial value is set to true.\"}},\"title\":\"Love\",\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{\"doesKatyaLoveChristian(bool)\":{\"notice\":\"Function to check if Katya loves Christian based on the input.\"},\"katyaLovesChristian()\":{\"notice\":\"A boolean state variable that indicates whether Katya loves Christian.\"}},\"notice\":\"Does My girlfriend love me? This is a simple contract for testing purposes with Foundry.\",\"version\":1}},\"settings\":{\"compilationTarget\":{\"src/KatyaLovesChristian.sol\":\"KatyaLovesChristian\"},\"evmVersion\":\"paris\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[\":@chainlink/=node_modules/@chainlink/\",\":@openzeppelin/=node_modules/@openzeppelin/\",\":ds-test/=lib/forge-std/lib/ds-test/src/\",\":forge-std/=lib/forge-std/src/\"]},\"sources\":{\"src/KatyaLovesChristian.sol\":{\"keccak256\":\"0xed5abb18abf5ffb4aceaa3d884b922b12b97b609e627b7fb26b99e1a09f36cbe\",\"license\":\"UNLICENSED\",\"urls\":[\"bzz-raw://7aa9da7fc211a045a78f7407683dcddf80576632db78e32124f203822fc2a04a\",\"dweb:/ipfs/QmYSDhQsLAda1YP3cnSWVtM9tNF8eezn1Mx4Dz2qy6ZJiw\"]}},\"version\":1}",
+  "metadata": {
+    "compiler": {
+      "version": "0.8.21+commit.d9974bed"
+    },
+    "language": "Solidity",
+    "output": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "bool",
+              "name": "doYou",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function",
+          "name": "doesKatyaLoveChristian",
+          "outputs": [
+            {
+              "internalType": "string",
+              "name": "answer",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "inputs": [],
+          "stateMutability": "view",
+          "type": "function",
+          "name": "katyaLovesChristian",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ]
+        }
+      ],
+      "devdoc": {
+        "kind": "dev",
+        "methods": {
+          "doesKatyaLoveChristian(bool)": {
+            "details": "If the input is false, it will be set to true and a specific message will be returned.",
+            "params": {
+              "doYou": "A boolean input that should indicate whether Katya loves Christian."
+            },
+            "returns": {
+              "answer": "A string message that confirms whether Katya loves Christian."
+            }
+          }
+        },
+        "version": 1
+      },
+      "userdoc": {
+        "kind": "user",
+        "methods": {
+          "doesKatyaLoveChristian(bool)": {
+            "notice": "Function to check if Katya loves Christian based on the input."
+          },
+          "katyaLovesChristian()": {
+            "notice": "A boolean state variable that indicates whether Katya loves Christian."
+          }
+        },
+        "version": 1
+      }
+    },
+    "settings": {
+      "remappings": [
+        "@chainlink/=node_modules/@chainlink/",
+        "@openzeppelin/=node_modules/@openzeppelin/",
+        "ds-test/=lib/forge-std/lib/ds-test/src/",
+        "forge-std/=lib/forge-std/src/"
+      ],
+      "optimizer": {
+        "enabled": true,
+        "runs": 200
+      },
+      "metadata": {
+        "bytecodeHash": "ipfs"
+      },
+      "compilationTarget": {
+        "src/KatyaLovesChristian.sol": "KatyaLovesChristian"
+      },
+      "libraries": {}
+    },
+    "sources": {
+      "src/KatyaLovesChristian.sol": {
+        "keccak256": "0xed5abb18abf5ffb4aceaa3d884b922b12b97b609e627b7fb26b99e1a09f36cbe",
+        "urls": [
+          "bzz-raw://7aa9da7fc211a045a78f7407683dcddf80576632db78e32124f203822fc2a04a",
+          "dweb:/ipfs/QmYSDhQsLAda1YP3cnSWVtM9tNF8eezn1Mx4Dz2qy6ZJiw"
+        ],
+        "license": "UNLICENSED"
+      }
+    },
+    "version": 1
+  },
+  "ast": {
+    "absolutePath": "src/KatyaLovesChristian.sol",
+    "id": 44847,
+    "exportedSymbols": {
+      "KatyaLovesChristian": [
+        44846
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "39:1380:28",
+    "nodes": [
+      {
+        "id": 44802,
+        "nodeType": "PragmaDirective",
+        "src": "39:24:28",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".13"
+        ]
+      },
+      {
+        "id": 44846,
+        "nodeType": "ContractDefinition",
+        "src": "246:1172:28",
+        "nodes": [
+          {
+            "id": 44807,
+            "nodeType": "VariableDeclaration",
+            "src": "415:38:28",
+            "nodes": [],
+            "constant": false,
+            "documentation": {
+              "id": 44804,
+              "nodeType": "StructuredDocumentation",
+              "src": "281:129:28",
+              "text": "@notice A boolean state variable that indicates whether Katya loves Christian.\n @dev The initial value is set to true."
+            },
+            "functionSelector": "da264d00",
+            "mutability": "mutable",
+            "name": "katyaLovesChristian",
+            "nameLocation": "427:19:28",
+            "scope": 44846,
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_bool",
+              "typeString": "bool"
+            },
+            "typeName": {
+              "id": 44805,
+              "name": "bool",
+              "nodeType": "ElementaryTypeName",
+              "src": "415:4:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              }
+            },
+            "value": {
+              "hexValue": "74727565",
+              "id": 44806,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "bool",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "449:4:28",
+              "typeDescriptions": {
+                "typeIdentifier": "t_bool",
+                "typeString": "bool"
+              },
+              "value": "true"
+            },
+            "visibility": "public"
+          },
+          {
+            "id": 44845,
+            "nodeType": "FunctionDefinition",
+            "src": "813:603:28",
+            "nodes": [],
+            "body": {
+              "id": 44844,
+              "nodeType": "Block",
+              "src": "894:522:28",
+              "nodes": [],
+              "statements": [
+                {
+                  "condition": {
+                    "id": 44816,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "nodeType": "UnaryOperation",
+                    "operator": "!",
+                    "prefix": true,
+                    "src": "988:6:28",
+                    "subExpression": {
+                      "id": 44815,
+                      "name": "doYou",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 44810,
+                      "src": "989:5:28",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_bool",
+                        "typeString": "bool"
+                      }
+                    },
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44829,
+                  "nodeType": "IfStatement",
+                  "src": "984:176:28",
+                  "trueBody": {
+                    "id": 44828,
+                    "nodeType": "Block",
+                    "src": "996:164:28",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 44819,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 44817,
+                            "name": "doYou",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44810,
+                            "src": "1010:5:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "74727565",
+                            "id": 44818,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1018:4:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "1010:12:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 44820,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1010:12:28"
+                      },
+                      {
+                        "expression": {
+                          "id": 44823,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 44821,
+                            "name": "answer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44813,
+                            "src": "1036:6:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "5965732c204b61747961206c6f7665732043687269737469616e206275742068657220747970696e6720697320612062697420726574617264656420617420746865206d6f6d656e74",
+                            "id": 44822,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1045:75:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_stringliteral_55849a11e8dfac4e597279848e0ae3a83741d16220eacd5655a900368a902bce",
+                              "typeString": "literal_string \"Yes, Katya loves Christian but her typing is a bit retarded at the moment\""
+                            },
+                            "value": "Yes, Katya loves Christian but her typing is a bit retarded at the moment"
+                          },
+                          "src": "1036:84:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "id": 44824,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1036:84:28"
+                      },
+                      {
+                        "expression": {
+                          "components": [
+                            {
+                              "id": 44825,
+                              "name": "answer",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44813,
+                              "src": "1141:6:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            }
+                          ],
+                          "id": 44826,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "1140:8:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "functionReturnParameters": 44814,
+                        "id": 44827,
+                        "nodeType": "Return",
+                        "src": "1134:14:28"
+                      }
+                    ]
+                  }
+                },
+                {
+                  "condition": {
+                    "id": 44830,
+                    "name": "doYou",
+                    "nodeType": "Identifier",
+                    "overloadedDeclarations": [],
+                    "referencedDeclaration": 44810,
+                    "src": "1272:5:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "id": 44843,
+                  "nodeType": "IfStatement",
+                  "src": "1268:142:28",
+                  "trueBody": {
+                    "id": 44842,
+                    "nodeType": "Block",
+                    "src": "1279:131:28",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 44833,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 44831,
+                            "name": "katyaLovesChristian",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44807,
+                            "src": "1293:19:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "74727565",
+                            "id": 44832,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "bool",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1315:4:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_bool",
+                              "typeString": "bool"
+                            },
+                            "value": "true"
+                          },
+                          "src": "1293:26:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bool",
+                            "typeString": "bool"
+                          }
+                        },
+                        "id": 44834,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1293:26:28"
+                      },
+                      {
+                        "expression": {
+                          "id": 44837,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 44835,
+                            "name": "answer",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 44813,
+                            "src": "1333:6:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_string_memory_ptr",
+                              "typeString": "string memory"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "hexValue": "5965732c204b61747961206c6f7665732043687269737469616e",
+                            "id": 44836,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": true,
+                            "kind": "string",
+                            "lValueRequested": false,
+                            "nodeType": "Literal",
+                            "src": "1342:28:28",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_stringliteral_f4c3d3d7ed39e6511a89244cc5c4c98dd570e7bc2b7656c51ba36998b5706656",
+                              "typeString": "literal_string \"Yes, Katya loves Christian\""
+                            },
+                            "value": "Yes, Katya loves Christian"
+                          },
+                          "src": "1333:37:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "id": 44838,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1333:37:28"
+                      },
+                      {
+                        "expression": {
+                          "components": [
+                            {
+                              "id": 44839,
+                              "name": "answer",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 44813,
+                              "src": "1391:6:28",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_string_memory_ptr",
+                                "typeString": "string memory"
+                              }
+                            }
+                          ],
+                          "id": 44840,
+                          "isConstant": false,
+                          "isInlineArray": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "nodeType": "TupleExpression",
+                          "src": "1390:8:28",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_string_memory_ptr",
+                            "typeString": "string memory"
+                          }
+                        },
+                        "functionReturnParameters": 44814,
+                        "id": 44841,
+                        "nodeType": "Return",
+                        "src": "1384:14:28"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            "documentation": {
+              "id": 44808,
+              "nodeType": "StructuredDocumentation",
+              "src": "460:348:28",
+              "text": "@notice Function to check if Katya loves Christian based on the input.\n @dev If the input is false, it will be set to true and a specific message will be returned.\n @param doYou A boolean input that should indicate whether Katya loves Christian.\n @return answer A string message that confirms whether Katya loves Christian."
+            },
+            "functionSelector": "ecbb3253",
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "doesKatyaLoveChristian",
+            "nameLocation": "822:22:28",
+            "parameters": {
+              "id": 44811,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44810,
+                  "mutability": "mutable",
+                  "name": "doYou",
+                  "nameLocation": "850:5:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44845,
+                  "src": "845:10:28",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_bool",
+                    "typeString": "bool"
+                  },
+                  "typeName": {
+                    "id": 44809,
+                    "name": "bool",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "845:4:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_bool",
+                      "typeString": "bool"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "844:12:28"
+            },
+            "returnParameters": {
+              "id": 44814,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 44813,
+                  "mutability": "mutable",
+                  "name": "answer",
+                  "nameLocation": "886:6:28",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 44845,
+                  "src": "872:20:28",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 44812,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "872:6:28",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "871:22:28"
+            },
+            "scope": 44846,
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "public"
+          }
+        ],
+        "abstract": false,
+        "baseContracts": [],
+        "canonicalName": "KatyaLovesChristian",
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": {
+          "id": 44803,
+          "nodeType": "StructuredDocumentation",
+          "src": "65:180:28",
+          "text": "@title Love\n @author Christian Reyes\n @notice Does My girlfriend love me? This is a simple contract for testing purposes with Foundry.\n @dev The answer is always yes."
+        },
+        "fullyImplemented": true,
+        "linearizedBaseContracts": [
+          44846
+        ],
+        "name": "KatyaLovesChristian",
+        "nameLocation": "255:19:28",
+        "scope": 44847,
+        "usedErrors": [],
+        "usedEvents": []
+      }
+    ],
+    "license": "UNLICENSED"
+  },
+  "id": 28
+}

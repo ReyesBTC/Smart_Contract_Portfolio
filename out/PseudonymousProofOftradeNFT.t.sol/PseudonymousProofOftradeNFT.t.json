@@ -1,0 +1,34 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "test/PseudonymousProofOftradeNFT.t.sol",
+    "id": 49849,
+    "exportedSymbols": {},
+    "nodeType": "SourceUnit",
+    "src": "32:25:37",
+    "nodes": [
+      {
+        "id": 49848,
+        "nodeType": "PragmaDirective",
+        "src": "32:23:37",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          "^",
+          "0.8",
+          ".0"
+        ]
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 37
+}
